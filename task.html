@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Power of HTML5</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 30px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        meter, progress {
+            width: 100%;
+            height: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exploring the Hidden Power of HTML5</h1>
+
+<section>
+    <details>
+        <summary>What is HTML5?</summary>
+        <p>
+            HTML5 is the modern version of HTML that introduces semantic, interactive,
+            and meaningful elements to build better web experiences.
+        </p>
+    </details>
+</section>
+
+<section>
+    <p>
+        This webpage highlights <mark>advanced HTML5 tags</mark> that improve accessibility,
+        clarity, and user interaction without extra scripting.
+    </p>
+</section>
+
+<section>
+    <p>Student Skill Level:</p>
+    <meter value="80" min="0" max="100">80%</meter>
+</section>
+
+<section>
+    <p>Course Completion Progress:</p>
+    <progress value="65" max="100"></progress>
+</section>
+<section>
+    <p>Search Technology:</p>
+    <input list="tech">
+    <datalist id="tech">
+        <option value="HTML5">
+        <option value="CSS3">
+        <option value="JavaScript">
+        <option value="React">
+    </datalist>
+</section>
+<section>
+    <form oninput="result.value = Number(a.value) + Number(b.value)">
+        <p>Simple Calculation using &lt;output&gt;:</p>
+        <input type="number" id="a"> +
+        <input type="number" id="b">
+        =
+        <output name="result">0</output>
+    </form>
+</section>
+</body>
+</html>
